@@ -11,3 +11,5 @@ In addition, the first cart arriving to Bi have to wait for the arrival of at le
 Then the two carts go back to Ai simultaniously.
 
 No conditions are set to the lagging behind cart e.i. when it arrives to Bi, it goes back to Ai immediately.
+
+A demonstration video is available at https://www.youtube.com/watch?v=woG7Isvep54.
