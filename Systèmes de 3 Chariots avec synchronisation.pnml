@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-FEC-7E9AE-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>Systèmes de 3 Chariots avec synchronisation</text>
+  </name>
+ <page id="g-FEC-7E9CE-1">
+  <place id="p-FEC-7E9D7-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="100" y="130"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA36-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="265" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA44-4">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>G2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="515"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA53-5">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>G3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="515"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA61-6">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Nbre Charios en B</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="415" y="655"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA71-7">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>Ordre de départ</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="655"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA82-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Chariots en mvt vers A</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="125" y="655"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA92-9">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="450" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EA9D-10">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>D1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="255"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EAAC-11">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>D2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="260"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EAB7-12">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>D3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="260"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EAC4-13">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>attente B1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="385"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EAD1-14">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>attente B2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="385"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EBC9-15">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>attente B3</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="385"/>
+   </graphics>
+  </place>
+  <place id="p-FEC-7EBDA-16">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>G1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="515"/>
+   </graphics>
+  </place>
+  <transition id="t-FEC-7EBE8-17">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="355" y="655"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EBF3-18">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>M, A1, A2, A3</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="195"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC04-19">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>A2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="570"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC10-20">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>A3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="570"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC1E-21">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="205" y="655"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC2A-22">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>B1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="315"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC35-23">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>B2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="265" y="315"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC42-24">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>B3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="315"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC4F-25">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="100" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC59-26">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="265" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC65-27">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="450" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-FEC-7EC70-28">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>A1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="570"/>
+   </graphics>
+  </transition>
+  <arc id="e-FEC-7EC8B-29" source="p-FEC-7EA9D-10" target="t-FEC-7EC2A-22">
+  </arc>
+  <arc id="e-FEC-7EDC2-30" source="t-FEC-7EC4F-25" target="p-FEC-7EBDA-16">
+  </arc>
+  <arc id="e-FEC-7EE35-31" source="t-FEC-7EC59-26" target="p-FEC-7EA44-4">
+  </arc>
+  <arc id="e-FEC-7EE3C-32" source="t-FEC-7EC65-27" target="p-FEC-7EA53-5">
+  </arc>
+  <arc id="e-FEC-7EE3E-33" source="p-FEC-7EBDA-16" target="t-FEC-7EC70-28">
+  </arc>
+  <arc id="e-FEC-7EE40-34" source="p-FEC-7EA44-4" target="t-FEC-7EC04-19">
+  </arc>
+  <arc id="e-FEC-7EE43-35" source="p-FEC-7EA53-5" target="t-FEC-7EC10-20">
+  </arc>
+  <arc id="e-FEC-7EE45-36" source="t-FEC-7EC70-28" target="p-FEC-7E9D7-2">
+   <graphics>
+    <position x="65" y="637" />
+    <position x="44" y="54" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EE72-37" source="t-FEC-7EC04-19" target="p-FEC-7EA36-3">
+   <graphics>
+    <position x="230" y="626" />
+    <position x="211" y="60" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EE85-38" source="t-FEC-7EC10-20" target="p-FEC-7EA92-9">
+   <graphics>
+    <position x="504" y="668" />
+    <position x="512" y="39" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EE96-39" source="p-FEC-7EA61-6" target="t-FEC-7EBE8-17">
+   <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </inscription>
+  </arc>
+  <arc id="e-FEC-7EE9B-40" source="p-FEC-7EAAC-11" target="t-FEC-7EC35-23">
+  </arc>
+  <arc id="e-FEC-7EE9F-41" source="t-FEC-7EBE8-17" target="p-FEC-7EA71-7">
+   <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </inscription>
+  </arc>
+  <arc id="e-FEC-7EEA3-42" source="t-FEC-7EC42-24" target="p-FEC-7EA61-6">
+   <graphics>
+    <position x="373" y="335" />
+    <position x="425" y="625" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EEB4-43" source="t-FEC-7EC35-23" target="p-FEC-7EA61-6">
+   <graphics>
+    <position x="315" y="343" />
+    <position x="408" y="576" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EEC4-44" source="t-FEC-7EC2A-22" target="p-FEC-7EA61-6">
+   <graphics>
+    <position x="268" y="318" />
+    <position x="388" y="588" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EED5-45" source="p-FEC-7EA36-3" target="t-FEC-7EBF3-18">
+  </arc>
+  <arc id="e-FEC-7EED7-46" source="p-FEC-7EA92-9" target="t-FEC-7EBF3-18">
+   <graphics>
+    <position x="400" y="143" />
+    <position x="273" y="171" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EEE8-47" source="p-FEC-7E9D7-2" target="t-FEC-7EBF3-18">
+   <graphics>
+    <position x="136" y="132" />
+    <position x="257" y="171" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EEF7-48" source="t-FEC-7EBF3-18" target="p-FEC-7EAAC-11">
+  </arc>
+  <arc id="e-FEC-7EEFA-49" source="t-FEC-7EBF3-18" target="p-FEC-7EA9D-10">
+   <graphics>
+    <position x="260" y="218" />
+    <position x="106" y="218" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF0B-50" source="t-FEC-7EBF3-18" target="p-FEC-7EAB7-12">
+   <graphics>
+    <position x="270" y="218" />
+    <position x="441" y="218" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF1A-51" source="p-FEC-7EAB7-12" target="t-FEC-7EC42-24">
+  </arc>
+  <arc id="e-FEC-7EF1D-52" source="p-FEC-7EA71-7" target="t-FEC-7EC4F-25">
+   <graphics>
+    <position x="234" y="606" />
+    <position x="115" y="384" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF2E-53" source="p-FEC-7EA71-7" target="t-FEC-7EC59-26">
+   <graphics>
+    <position x="312" y="573" />
+    <position x="297" y="395" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF3D-54" source="p-FEC-7EA71-7" target="t-FEC-7EC65-27">
+   <graphics>
+    <position x="318" y="578" />
+    <position x="423" y="375" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF4E-55" source="t-FEC-7EBE8-17" target="p-FEC-7EA82-8">
+   <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="10" y="10" />
+    </graphics>
+   </inscription>
+   <graphics>
+    <position x="352" y="695" />
+    <position x="111" y="698" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF61-56" source="p-FEC-7EA82-8" target="t-FEC-7EC1E-21">
+   <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </inscription>
+  </arc>
+  <arc id="e-FEC-7EF64-57" source="p-FEC-7EA61-6" target="t-FEC-7EC1E-21">
+   <graphics>
+    <position x="414" y="694" />
+    <position x="192" y="697" />
+   </graphics>  </arc>
+  <arc id="e-FEC-7EF9A-58" source="t-FEC-7EC1E-21" target="p-FEC-7EA71-7">
+  </arc>
+  <arc id="e-FEC-7EF9D-59" source="t-FEC-7EC2A-22" target="p-FEC-7EAC4-13">
+  </arc>
+  <arc id="e-FEC-7EF9F-60" source="t-FEC-7EC35-23" target="p-FEC-7EAD1-14">
+  </arc>
+  <arc id="e-FEC-7EFA1-61" source="t-FEC-7EC42-24" target="p-FEC-7EBC9-15">
+  </arc>
+  <arc id="e-FEC-7EFA3-62" source="p-FEC-7EAC4-13" target="t-FEC-7EC4F-25">
+  </arc>
+  <arc id="e-FEC-7EFA5-63" source="p-FEC-7EAD1-14" target="t-FEC-7EC59-26">
+  </arc>
+  <arc id="e-FEC-7EFA9-64" source="p-FEC-7EBC9-15" target="t-FEC-7EC65-27">
+  </arc>
+ </page>
+ </net>
+</pnml>
